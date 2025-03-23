@@ -8,6 +8,7 @@ public class CompletableFutureMainMethods {
         System.out.println("Main Thread: " + Thread.currentThread());
         System.out.println("Tohir : " + Thread.currentThread());
         System.out.println("22222222222222222");
+        System.out.println("3333333");
 
         ExecutorService executorService = Executors.newFixedThreadPool(10);
 
