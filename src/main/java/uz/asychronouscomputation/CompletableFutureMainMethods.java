@@ -6,6 +6,7 @@ public class CompletableFutureMainMethods {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 
         System.out.println("Main Thread: " + Thread.currentThread());
+        System.out.println("Tohir : " + Thread.currentThread());
 
 
         ExecutorService executorService = Executors.newFixedThreadPool(10);
