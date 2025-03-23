@@ -5,6 +5,9 @@ import java.util.concurrent.*;
 public class CompletableFutureMainMethods {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 
+        System.out.println("Main Thread: " + Thread.currentThread());
+
+
         ExecutorService executorService = Executors.newFixedThreadPool(10);
 
         CompletableFuture<Void> completableFuture = CompletableFuture.supplyAsync(() -> {
