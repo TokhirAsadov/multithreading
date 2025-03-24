@@ -1,6 +1,7 @@
 # Input/Output Streams
 ***
 ## Byte Streams
+![img.png](images/byte.png)
 ```java
 public class ByteStreamExample {
     public static void main(String[] args) {
@@ -26,6 +27,7 @@ public class ByteStreamExample {
 ```
 ***
 ## Character Streams
+![img.png](images/character.png)
 ```java
 import java.io.*;
 
@@ -48,6 +50,21 @@ public class CharacterStreamExample {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+}
+```
+***
+## Standard Streams
+![img.png](images/standard.png)
+```java
+import java.io.*;
+
+public class StandardStreamExample {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Ismingizni kiriting: ");
+        String name = br.readLine();
+        System.out.println("Salom, " + name + "!");
     }
 }
 ```
