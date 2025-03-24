@@ -1,6 +1,8 @@
 # Input/Output Streams
 ![img.png](images/io_and_nio.jpg)
 ***
+# Read/Write
+![img.png](images/read_write.png)
 ## Byte Streams
 ![img.png](images/byte.png)
 ```java
