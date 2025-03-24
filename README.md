@@ -1,4 +1,5 @@
 # Input/Output Streams
+![img.png](images/io_and_nio.jpg)
 ***
 ## Byte Streams
 ![img.png](images/byte.png)
