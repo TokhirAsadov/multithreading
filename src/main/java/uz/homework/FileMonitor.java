@@ -1,4 +1,4 @@
-package uz.ioandnoi.homework;
+package uz.homework;
 
 import java.io.IOException;
 import java.nio.file.*;
