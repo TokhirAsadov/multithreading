@@ -1,0 +1,71 @@
+read.run(LoggerThread.java:9)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+------------------------------------------------------
+
+
+user{
+    fullName
+    emails[] -> List
+    HashMap<Integer, Course> coursesMap
+}
+
+course{
+    name;
+    set<string> modules;
+}Thread: Thread-1
+Error: Logger thread'da xatolik..
+java.lang.RuntimeException: Logger thread'da xatolik..
+	at uz.handsOnMiniProject.threads.LoggerThread.run(LoggerThread.java:9)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+------------------------------------------------------
+Thread: Thread-2
+Error: Logger thread'da xatolik..
+java.lang.RuntimeException: Logger thread'da xatolik..
+	at uz.handsOnMiniProject.threads.LoggerThread.run(LoggerThread.java:9)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+------------------------------------------------------
+Thread: Thread-3
+Error: Logger thread'da xatolik..
+java.lang.RuntimeException: Logger thread'da xatolik..
+	at uz.handsOnMiniProject.threads.LoggerThread.run(LoggerThread.java:9)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+------------------------------------------------------
+Thread: Thread-1
+Error: Logger thread'da xatolik..
+java.lang.RuntimeException: Logger thread'da xatolik..
+	at uz.handsOnMiniProject.threads.LoggerThread.run(LoggerThread.java:9)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+------------------------------------------------------
+
+
+user{
+    fullName
+    emails[] -> List
+    HashMap<Integer, Course> coursesMap
+}
+
+course{
+    name;
+    set<string> modules;
+}Thread: Thread-1
+Error: Logger thread'da xatolik..
+java.lang.RuntimeException: Logger thread'da xatolik..
+	at uz.handsOnMiniProject.threads.LoggerThread.run(LoggerThread.java:9)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+------------------------------------------------------
+Thread: Thread-2
+Error: Logger thread'da xatolik..
+java.lang.RuntimeException: Logger thread'da xatolik..
+	at uz.handsOnMiniProject.threads.LoggerThread.run(LoggerThread.java:9)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+------------------------------------------------------
+Thread: Thread-3
+Error: Logger thread'da xatolik..
+java.lang.RuntimeException: Logger thread'da xatolik..
+	at uz.handsOnMiniProject.threads.LoggerThread.run(LoggerThread.java:9)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+------------------------------------------------------
+Thread: Thread-1
+Error: Logger thread'da xatolik..
+java.lang.RuntimeException: Logger thread'da xatolik..
+	at uz.handsOnMiniProject.threads.LoggerTh

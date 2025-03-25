@@ -1,0 +1,15 @@
+read.run(LoggerThread.java:9)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+------------------------------------------------------
+
+
+user{
+    fullName
+    emails[] -> List
+    HashMap<Integer, Course> coursesMap
+}
+
+course{
+    name;
+    set<string> modules;
+}
