@@ -23,6 +23,11 @@ public class LargeFileSplitter {
     }
 
     public static void main(String[] args) throws IOException {
-        splitFile("error.log", 1024); // 1KB parts
+        splitFile("error.log", 1024); // 1MB parts
     }
+
+    // 1 byte = 8 bit
+    // 1 KB = 1024 byte
+    // 1 MB = 1024 KB = 1024*1024 byte
+    // 1 GB = 1024 MB = 1024*1024 KB = 1024*1024*1024 byte
 }
