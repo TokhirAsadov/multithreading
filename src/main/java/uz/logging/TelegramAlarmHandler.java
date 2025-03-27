@@ -12,6 +12,7 @@ import java.util.logging.StreamHandler;
 public class TelegramAlarmHandler extends StreamHandler {
     public TelegramAlarmHandler(){
         super.setFilter(new TelegramAlarmFilter());
+        super.setFormatter(new TelegramAlarmFormatter());
     }
 
     @Override
@@ -19,12 +20,15 @@ public class TelegramAlarmHandler extends StreamHandler {
         if (isLoggable(record)) {
             HttpClient client = HttpClient.newHttpClient();
 
+            // TelegramAlarmFormatter bilan formatted qilinyapdi
+            String formattedMessage = getFormatter().format(record);
+
             String message = """
                     {
                         "chat_id": "%s",
                         "text": "%s"
                     }
-                    """.formatted(Secrets.CHAT_ID, record.getMessage());
+                    """.formatted(Secrets.CHAT_ID, formattedMessage);
             HttpRequest request = HttpRequest.newBuilder()
                     .POST(HttpRequest.BodyPublishers.ofString(message))
                     .uri(URI.create(Secrets.SEND_MESSAGE))
@@ -32,7 +36,6 @@ public class TelegramAlarmHandler extends StreamHandler {
                     .build();
             try {
                 HttpResponse<String> send = client.send(request, HttpResponse.BodyHandlers.ofString());
-                System.out.println("---> " + send);
             } catch (IOException | InterruptedException e) {
                 System.out.println(e.getMessage());
                 throw new RuntimeException(e);
