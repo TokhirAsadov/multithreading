@@ -36,3 +36,6 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### TelegramAlarmBot Secrets ###
+**/src/main/java/uz/secrets
