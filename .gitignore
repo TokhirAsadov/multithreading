@@ -39,3 +39,5 @@ build/
 
 ### TelegramAlarmBot Secrets ###
 /src/main/java/uz/secrets
+**/Secrets.java
+**/Secrets.class
