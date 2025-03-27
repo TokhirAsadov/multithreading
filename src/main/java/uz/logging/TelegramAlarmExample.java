@@ -20,25 +20,16 @@ public class TelegramAlarmExample {
         TelegramAlarmHandler handler = new TelegramAlarmHandler();
         logger.addHandler(handler);
 
-        if (new Random().nextBoolean()){
-            logger.log(Level.SEVERE,"Dasturda xatolik bor!");
-            try {
+        try {
+            if (new Random().nextBoolean()) {
+                throw new RuntimeException("Runtime Exception for alarm testing");
+            } else {
                 int coreCount = 12 / 0;
-            }catch (Exception e){
-                String s = "\n";
-                StringWriter stringWriter = new StringWriter();
-                PrintWriter printWriter = new PrintWriter(stringWriter);
-                e.printStackTrace(printWriter);
-
-                s=s+stringWriter.getBuffer();
-
-                logger.log(Level.SEVERE,s);
-                printWriter.close();
-                throw new RuntimeException(e);
             }
-
-        }else {
-            logger.log(Level.INFO,"Hammasi joyida");
+        } catch (RuntimeException e){
+            e.printStackTrace();
+            // bu yerda exception loggerga berib yuborilyapdi; va bu exception LogRecord da thrown metodi orqali get qilinadi
+            logger.log(Level.SEVERE,"Error Message For Telegram",e);
         }
     }
 }
