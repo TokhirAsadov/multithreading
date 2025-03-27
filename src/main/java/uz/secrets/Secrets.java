@@ -1,4 +1,4 @@
-package uz.logging;
+package uz.secrets;
 
 public class Secrets {
     public static final String CHAT_ID = "7567495333";
