@@ -17,9 +17,6 @@ public class TelegramAlarmExample {
     private static final Logger logger = Logger.getLogger(TelegramAlarmExample.class.getSimpleName());
 
     public static void main(String[] args) throws FileNotFoundException {
-        TelegramAlarmHandler handler = new TelegramAlarmHandler();
-        logger.addHandler(handler);
-
         try {
             if (new Random().nextBoolean()) {
                 throw new RuntimeException("Runtime Exception for alarm testing");
