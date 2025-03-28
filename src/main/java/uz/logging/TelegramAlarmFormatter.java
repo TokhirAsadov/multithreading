@@ -15,6 +15,7 @@ public class TelegramAlarmFormatter extends Formatter {
             PrintWriter printWriter = new PrintWriter(out);
             thrown.printStackTrace(printWriter);
             stackTrace += out.toString();
+            printWriter.close();
         }
         return "%s -- [%d] -- %s -- [%s] %s"
                 .formatted(record.getLevel(),
